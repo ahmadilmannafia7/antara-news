@@ -24,6 +24,8 @@ API: [https://api-berita-indonesia.vercel.app/](https://api-berita-indonesia.ver
 | Tekno        | https://api-berita-indonesia.vercel.app/antara/tekno/ |
 | Otomotif     | https://api-berita-indonesia.vercel.app/antara/otomotif/ |
 
+---
+
 ### 📦 Contoh Response API
 ```json
 {
@@ -33,3 +35,73 @@ API: [https://api-berita-indonesia.vercel.app/](https://api-berita-indonesia.ver
   "description": "Dalam upaya memperkuat skuad Tim Nasional Indonesia, PSSI kembali melakukan langkah strategis dengan menaturalisasi ...",
   "thumbnail": "https://img.antaranews.com/cache/800x533/2025/03/10/Naturalisasi.jpeg"
 }
+```
+
+---
+
+## 💻 Cara Menjalankan Project Laravel Ini di Lokal
+
+Ikuti langkah-langkah berikut untuk menjalankan project Laravel ini setelah kamu clone atau download:
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
+```
+Ganti `username` dan `nama-repo` dengan username GitHub dan nama repository kamu.
+
+---
+
+### 2. Install Dependency PHP (via Composer)
+```bash
+composer install
+```
+
+---
+
+### 3. Install Dependency Frontend (via NPM)
+```bash
+npm install
+npm run dev
+```
+
+---
+
+### 4. Salin File `.env`
+```bash
+cp .env.example .env
+```
+
+---
+
+### 5. Generate App Key
+```bash
+php artisan key:generate
+```
+
+---
+
+### 6. (Opsional) Konfigurasi Database
+Buka file `.env` dan sesuaikan bagian berikut jika kamu menggunakan database:
+```env
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+### 7. (Opsional) Jalankan Migrasi
+```bash
+php artisan migrate
+```
+
+---
+
+### 8. Jalankan Server Laravel
+```bash
+php artisan serve
+```
+Akses project di browser:  
+👉 [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
