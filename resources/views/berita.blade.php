@@ -61,16 +61,9 @@
                     <div class="p-4">
                         <h3 class="text-lg font-bold text-gray-800 mb-2">{{ $item['title'] }}</h3>
                         <p class="text-sm text-gray-500 mb-2">
-<<<<<<< HEAD
                             <!-- {{ \Carbon\Carbon::parse($item['pubDate'])->translatedFormat('d F Y H:i') }} -->
                             {{ \Carbon\Carbon::parse($item['pubDate'])->setTimezone('Asia/Jakarta')->translatedFormat('d F Y H:i') }}
 
-=======
-<!--                             {{ \Carbon\Carbon::parse($item['pubDate'])->translatedFormat('d F Y H:i') }} -->
-                            {{ \Carbon\Carbon::parse($item['pubDate'])->setTimezone('Asia/Jakarta')->translatedFormat('d F Y H:i') }}
-
-                            
->>>>>>> 087c3446723bb88cf5a5d42e16449eea0d86b1db
                         </p>
                         <p class="text-gray-700 text-sm mb-3 line-clamp-3">
                             {{ $item['description'] }}
